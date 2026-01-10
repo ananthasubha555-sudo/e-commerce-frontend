@@ -17,7 +17,7 @@ const ProductListPage = () => {
             setLoading(true);
             console.log('🛒 Fetching REAL products...');
             
-            const { data } = await API.get('/products');
+            const { data } = await API.get('/api/products');
             
             console.log('✅ Products loaded:', data.products.length);
             
