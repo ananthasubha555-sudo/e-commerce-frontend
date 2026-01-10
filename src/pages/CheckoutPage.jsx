@@ -88,7 +88,7 @@ const CheckoutPage = () => {
             console.log('📦 Creating order...');
             
             // Create order - this WILL work now
-            const { data } = await API.post('/orders', orderData);
+            const { data } = await API.post('/api/orders', orderData);
             
             console.log('✅ Order response:', data);
             
