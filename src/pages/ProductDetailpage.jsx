@@ -24,7 +24,7 @@ const ProductDetailPage = () => {
             setLoading(true);
             console.log(`🛒 Fetching REAL product ${id}...`);
             
-            const { data } = await API.get(`/products/${id}`);
+            const { data } = await API.get(`/api/products/${id}`);
             
             console.log('✅ Product data:', data.product);
             
