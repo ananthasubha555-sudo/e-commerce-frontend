@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const API = axios.create({
-  baseURL: 'https://e-commerce-backend-5-cacl.onrender.com'
+   baseURL: import.meta.env.VITE_BACKEND_URL,
 });
 
 API.interceptors.request.use((req) => {
