@@ -19,7 +19,7 @@ const HomePage = () => {
 
     const fetchProducts = async () => {
         try {
-            const { data } = await API.get('/products?limit=4');
+            const { data } = await API.get('/api/products?limit=4');
             if (data.success) {
                 setProducts(data.products);
             }
